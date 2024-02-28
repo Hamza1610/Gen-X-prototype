@@ -87,7 +87,11 @@ section h2 {
   font-size: 3em;
   margin-bottom: 10px;
 }
-
+.benefit_div {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
 .benefit-list {
   font-size: 1.2em;
   animation: slideInDown 1.7s ease-out;
@@ -107,7 +111,11 @@ section h2 {
 .about {
   font-size: 1.2em;
   animation: slideInDown 1.7s ease-in-out;
-
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.first_container {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 .signup, .signin {
   background-color: #f0f0f0;
