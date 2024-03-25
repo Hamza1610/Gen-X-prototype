@@ -1,0 +1,210 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+header.hero {
+  background-image: url("ai_header_edit.png"); /* Replace with your desired image */
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  animation: slideInUp 1.7s ease-out;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: slideInDown 1s ease-in;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+header .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  animation: slideInDown 1s ease-in-out;
+}
+
+header .btn.secondary {
+  background-color: #ddd;
+  color: #333;
+}
+
+section {
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  animation: slideInUp 1s ease-out;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature i {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.benefit_div {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.benefit-list {
+  font-size: 1.2em;
+  animation: slideInDown 1.7s ease-out;
+  text-align: center;
+}
+
+.benefit-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-list li {
+  margin-bottom: 10px;
+}
+
+.about {
+  font-size: 1.2em;
+  animation: slideInDown 1.7s ease-in-out;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.first_container {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.signup, .signin {
+  background-color: #f0f0f0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.signup h2, .signin h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flexbox;
+  justify-content: center;
+  margin-bottom: 15px;
+  animation: slideInDown 1.7s ease-out;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+.input {
+  max-width: 450px;
+  animation: slideInDown 1.2s ease-in-out;
+}
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: 210px;
+}
+
+/* Responsive Design (Optional): Use media queries to adjust styles for different screen sizes */
+
+@media (max-width: 768px) {
+header.hero {
+  height: 400px;
+}
+
+.features-grid, .benefit-list {
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature, .benefit-list li {
+  margin: 10px 0;
+}
+
+.signup, .signin {
+  padding: 30px;
+}
+}
+
+/* Keyframe animations */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
