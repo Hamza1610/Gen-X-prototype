@@ -1,0 +1,45 @@
+.signup {
+    background-color: #f0f0f0;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    
+  }
+  
+  .signup h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    display: flexbox;
+    justify-content: center;
+    margin-bottom: 15px;
+    animation: slideInDown 1.7s ease-out;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .input {
+    max-width: 450px;
+    animation: slideInDown 1.2s ease-in-out;
+  }
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  
