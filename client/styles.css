@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  
 }
 
 .container {
@@ -191,7 +192,7 @@ header.hero {
 }
 
 /* Keyframe animations */
-@keyframes slideInDown {
+/* @keyframes slideInDown {
   from {
     transform: translateY(-100%);
   }
@@ -207,4 +208,4 @@ header.hero {
   to {
     transform: translateY(0);
   }
-}
+} */
