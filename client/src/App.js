@@ -6,8 +6,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App" style={{width:'100vw'}}>
-      <header class="hero">
+    <div className="App">
+            <header class="hero">
         <div class="container">
           <h1>Introducing Gen-X</h1>
           <p>The AI-powered voice shell executor, built for the future.</p>
@@ -92,7 +92,8 @@ function App() {
       <SignIn />
       {/* Footer */}
       <Footer />
-  </div>
+
+    </div>
   );
 }
 
