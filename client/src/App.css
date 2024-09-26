@@ -117,8 +117,7 @@ section h2 {
   font-size: 3em;
   margin-bottom: 10px;
 }
-.benefit_div {
-  transform: scale(1.05);
+.benefits {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
