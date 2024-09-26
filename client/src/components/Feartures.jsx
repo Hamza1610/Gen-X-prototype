@@ -1,7 +1,7 @@
 const Feature  = () => {
   return (
     //features
-    <section class="w-75">
+    <section className="features">
     <div class="container">
       <h2>Unleash the Power of AI</h2>
       <div class="features-grid">
