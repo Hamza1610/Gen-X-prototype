@@ -19,17 +19,15 @@ function App() {
         </div>
       </header>
 
-      <section class="audio">
-        <i class="fa fa-file-audio-o" aria-hidden="true"></i>
-        <div></div>
+      <section class="w-100">
+        {/* <Feature /> */}
+        {/* <Benefits /> */}
+        {/* <About /> */}
+        {/* SignUp */}
+        <SignUp />
+        {/* Sign in */}
+        {/* <SignIn /> */}
       </section>
-      <Feature />
-      <Benefits />
-      <About />
-      {/* SignUp */}
-      <SignUp />
-      {/* Sign in */}
-      <SignIn />
       {/* Footer */}
       <Footer />
     </div>
