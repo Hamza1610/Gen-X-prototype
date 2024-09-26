@@ -41,7 +41,6 @@ body {
 }
 
 .container {
-  max-width: 1000px;
   margin: 0 auto;
   padding: 30px;
 }
@@ -56,7 +55,6 @@ header.hero {
   justify-content: center;
   text-align: center;
   color: #fff;
-  animation: slideInUp 1.7s ease-out;
 }
 
 header h1 {
@@ -78,7 +76,6 @@ header .btn {
   border-radius: 5px;
   margin-right: 10px;
   text-decoration: none;
-  animation: slideInDown 1s ease-in-out;
 }
 
 header .btn.secondary {
@@ -110,11 +107,9 @@ section h2 {
   border-radius: 5px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-  animation: slideInUp 1s ease-out;
 }
 
 .feature:hover {
-  transform: scale(1.05);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -128,7 +123,6 @@ section h2 {
 }
 .benefit-list {
   font-size: 1.2em;
-  animation: slideInDown 1.7s ease-out;
   text-align: center;
 }
 
@@ -144,7 +138,6 @@ section h2 {
 
 .about {
   font-size: 1.2em;
-  animation: slideInDown 1.7s ease-in-out;
   border-radius: 5px;
   margin-bottom: 30px;
 }
@@ -179,23 +172,4 @@ header.hero {
 .signup, .signin {
   padding: 30px;
 }
-}
-
-/* Keyframe animations */
-@keyframes slideInDown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-    }
-}
-
-@keyframes slideInUp {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
 }
