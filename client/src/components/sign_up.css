@@ -1,8 +1,14 @@
 .signup {
-    background-color: #f0f0f0;
-    padding-top: 50px;
-    padding-bottom: 25px;
-    
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;  
+    justify-content: center; 
+    align-items: center;
+    min-height: 40vh;
+    max-width: 97%;
+  }
+  .signup-form {
+    width: 60%;
   }
   
   .signup h2 {
@@ -14,8 +20,6 @@
   .form-group {
     display: flexbox;
     justify-content: center;
-    margin-bottom: 15px;
-    animation: slideInDown 1.7s ease-out;
   }
   
   .form-group label {
@@ -23,15 +27,11 @@
     margin-bottom: 5px;
   }
   
-  .form-group input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-  }
-  .input {
-    max-width: 450px;
-    animation: slideInDown 1.2s ease-in-out;
+  input {
+    max-width: 400px;
+    @media (max-width: 768px) {
+      max-width: 300px;
+    }
   }
   button[type="submit"] {
     background-color: #007bff;
