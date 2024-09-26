@@ -3,11 +3,10 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 30px;
 }
@@ -53,8 +52,7 @@ header .btn.secondary {
 }
 
 section {
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
+  max-width: 90%;
 }
 
 section h2 {
@@ -88,6 +86,7 @@ section h2 {
   font-size: 3em;
   margin-bottom: 10px;
 }
+
 .benefit_div {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -172,7 +171,7 @@ footer {
 
 /* Responsive Design (Optional): Use media queries to adjust styles for different screen sizes */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 header.hero {
   height: 400px;
 }
@@ -189,7 +188,7 @@ header.hero {
 .signup, .signin {
   padding: 30px;
 }
-}
+} */
 
 /* Keyframe animations */
 /* @keyframes slideInDown {
