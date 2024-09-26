@@ -2,8 +2,8 @@ import './sign_in.css';
 
 const SignIn = () => {
     return (
-        <section class="signin" id="signin">
-        <div class="container">
+        <section className="signin" id="signin">
+        <div class="">
           <h2>Welcome Back</h2>
           <p>Sign in to your Gen-X account.</p>
           <form action="#">
