@@ -5,7 +5,7 @@ const SignUp = () => {
         <section class="signup" id="signup">
           <form class="signup-form">
             <h2>Join the Future</h2>
-            <p>Sign up to be part of the Gen-X revolution.</p>
+            <p>Join us by signing up here</p>
             <form action="#">
               <div class="form-group">
                 <label for="email">Email</label>
@@ -17,7 +17,7 @@ const SignUp = () => {
               </div>
               <button type="submit">Sign Up</button>
             </form>
-            <p>Already have an account? <a href="#signin">Sign in here.</a></p>
+            {/* <p>Already have an account? <a href="#signin">Sign in here.</a></p> */}
           </form>
         </section>
     
