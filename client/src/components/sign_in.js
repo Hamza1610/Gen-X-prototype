@@ -16,7 +16,7 @@ const SignIn = () => {
               <input class="input" type="password" id="password" name="password" required />
             </div>
             <button type="submit">Sign In</button>
-            <a href="#">Forgot password?</a>
+            <a href="/">Forgot password?</a>
           </form>
         </div>
         </section>
