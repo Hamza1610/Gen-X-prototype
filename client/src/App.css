@@ -1,5 +1,11 @@
 .App {
+  max-width: 100vw;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: white;
 }
 
 .App-logo {
@@ -33,23 +39,18 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 30px;
-}
+/* .sections {
+  width: 80%;
+} */
 
 header.hero {
   background-image: url("ai_header_edit.png"); /* Replace with your desired image */
   background-size: cover;
   background-position: center;
   height: 600px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +61,6 @@ header.hero {
 header h1 {
   font-size: 3em;
   margin-bottom: 20px;
-  animation: slideInDown 1s ease-in;
 }
 
 header p {
@@ -68,7 +68,7 @@ header p {
   margin-bottom: 40px;
 }
 
-header .btn {
+.btn {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -84,17 +84,25 @@ header .btn.secondary {
 }
 
 section {
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
+  width: 80vw;
+}
+.section-component {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 section h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.3em;
   margin-bottom: 30px;
 }
 
+
 .features-grid {
+  width: 80%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -105,12 +113,15 @@ section h2 {
   margin: 15px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  box-shadow: 10px 10px 20px 30px rgba(122, 243, 41, 0.1);
 }
 
+.feature-img {
+  width: 100%;
+  height: 50%;
+}
 .feature:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 20px 30px rgba(227, 231, 224, 0.1);
 }
 
 .feature i {
@@ -121,25 +132,47 @@ section h2 {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
-.benefit-list {
+.benefit-lists {
   font-size: 1.2em;
   text-align: center;
 }
-
-.benefit-list ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.benefit-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.benefit-img-div {
+  width: 35%;
+  height: 35vh;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
-.benefit-list li {
-  margin-bottom: 10px;
+.benefit-img {
+  width: 100%;
+  height: 100%;
+}
+.benefit-content {
+  width: 60%;
+  @media (max-width: 768px) {
+    width: 90%;
+    text-align: justify;
+  }
 }
 
 .about {
   font-size: 1.2em;
   border-radius: 5px;
   margin-bottom: 30px;
+}
+.section-component  {
+  margin-bottom: 20px;
+}
+.second_container > p {
+  font-size: 1.2rem;
 }
 .first_container {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -167,9 +200,5 @@ header.hero {
 
 .feature, .benefit-list li {
   margin: 10px 0;
-}
-
-.signup, .signin {
-  padding: 30px;
 }
 }
