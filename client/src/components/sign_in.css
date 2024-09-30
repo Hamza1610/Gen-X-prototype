@@ -1,7 +1,6 @@
 .signin {
     height: 40vh;
-    width: 100%;
-    background-color: #f0f0f0;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -17,7 +16,6 @@
     display: flexbox;
     justify-content: center;
     margin-bottom: 15px;
-    animation: slideInDown 1.7s ease-out;
   }
   
   .form-group label {
@@ -25,16 +23,11 @@
     margin-bottom: 5px;
   }
   
-  .form-group input {
+  .input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
-  }
-  .input {
-    max-width: 45%;
-    min-width: 45%;
-    animation: slideInDown 1.2s ease-in-out;
+    width: 80%;
   }
   button[type="submit"] {
     background-color: #007bff;
