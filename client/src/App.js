@@ -2,8 +2,11 @@
 import { useState } from 'react';
 import LangingPage from './pages';
 import GetStartedPage from './pages/get_started';
+import './styles/get_started.css';
+
 import { Container, Button, Navbar, Image, ButtonToolbar, Tab, Tabs } from 'react-bootstrap'
 import Settings from './components/settings';
+import Workspace from './components/workspace';
 
 function App() {
 
@@ -38,7 +41,7 @@ function App() {
 
 
     {/* /* UI version 1 */ }
-    <Navbar style={{width: '100vw', height: '50px'}}>
+    <Navbar style={{width: '100vw', height: '50px', marginBotton: '10px'}}>
       <Navbar.Brand style={{float: 'left', margin: '10px', fontSize: '2em', fontStyle: 'italic'}}>
         {/* A gif image that suit Gen-X */}
         Gen-X
@@ -50,11 +53,10 @@ function App() {
         <Button id='settings-btn' onClick={(event) => showSettings(event)}><i className='fas fa-wrench'></i>Settings</Button>
       </aside>
       <main>
-        <Container className='space-container' hidden={showTab.showSpaceTab} style={{ width: '100vw'}}>
-          <h4 className='tab-label'>Space</h4>
+        <Container className='space-container' hidden={showTab.showSpaceTab}>
+          <Workspace />
         </Container>
-        <Container className='settings-container' hidden  style={{width: '100vw', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-          <h4 className='tab-label' style={{ textAlign: 'start'}}>Settings</h4>
+        <Container className='settings-container' hidden={showTab.showSettingTab}>
           <Settings />
         </Container>
       </main>
