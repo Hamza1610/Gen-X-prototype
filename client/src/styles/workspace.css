@@ -1,0 +1,6 @@
+.workspace-component {
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    height: 90vh;
+}
