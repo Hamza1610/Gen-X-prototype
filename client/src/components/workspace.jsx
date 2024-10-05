@@ -5,7 +5,8 @@ export default  function Workspace(props) {
 
     return (
         <div className='workspace-component'>
-            { /*  This is where the workspace compont lies*/}
+            { /*  Workspace componant can be different type of work, media, research tools. Can be added as a component*/}
+            
         </div>
     )
 }
