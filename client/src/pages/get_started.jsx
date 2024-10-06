@@ -2,7 +2,7 @@ import '../styles/App.css';
 // import backgroundImage from 'ai_header.jpeg'
 import { useState } from 'react';
 import './styles/get_started.css';
-import { Container, Button, Navbar, Image, ButtonToolbar, Tab, Tabs } from 'react-bootstrap'
+import { Container, Button, Navbar, ButtonToolbar } from 'react-bootstrap'
 import Settings from './components/settings';
 import Workspace from './components/workspace';
 
