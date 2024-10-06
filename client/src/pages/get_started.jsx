@@ -1,10 +1,7 @@
 import '../styles/App.css';
 // import backgroundImage from 'ai_header.jpeg'
 import { useState } from 'react';
-import LangingPage from './pages';
-import GetStartedPage from './pages/get_started';
 import './styles/get_started.css';
-
 import { Container, Button, Navbar, Image, ButtonToolbar, Tab, Tabs } from 'react-bootstrap'
 import Settings from './components/settings';
 import Workspace from './components/workspace';
@@ -65,5 +62,5 @@ function GetStartedPage() {
       <Button><i className='fas fa-wrench'></i></Button>
     </ButtonToolbar>
   </div>
-  )
+  )}
 export default GetStartedPage;
