@@ -1,12 +1,7 @@
-// import { BrowserRouter, Routes, Route, } from 'react-router-dom';
-import { useState } from 'react';
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import LangingPage from './pages';
 import GetStartedPage from './pages/get_started';
 import './styles/get_started.css';
-
-import { Container, Button, Navbar, Image, ButtonToolbar, Tab, Tabs } from 'react-bootstrap'
-import Settings from './components/settings';
-import Workspace from './components/workspace';
 
 function App() {
 
