@@ -64,6 +64,6 @@ function GetStartedPage() {
       <Button><i className='fas fa-server'></i></Button>
       <Button><i className='fas fa-wrench'></i></Button>
     </ButtonToolbar>
-  
+  </div>
 
 export default GetStartedPage;
