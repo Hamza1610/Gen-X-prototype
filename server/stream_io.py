@@ -1,6 +1,6 @@
 
 
-class StreamIo:  
+class StreamIo:
     pass
 
 
