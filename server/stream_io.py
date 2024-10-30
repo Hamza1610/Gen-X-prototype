@@ -1,9 +1,8 @@
 from fastapi import FastAPI, WebSocket
-
 socket_app = FastAPI()
 
 # websocket server
-@socket_app.ws('/websocket')
+@socket_app.websocket('/websocket')
 async def accept_message(websocket: WebSocket):
     await websocket.accept()
 
