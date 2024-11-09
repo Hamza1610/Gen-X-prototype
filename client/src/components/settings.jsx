@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function Settings() {
 
     const [theme, setTheme] = useState(localStorage.getItem('Theme') || 'dark');
-    const [font, setFont] = useState(localStorage.getItem('Font') ||'1em');
+    const [font, setFont] = useState(localStorage.getItem('Font') || '1em');
 
     const saveSettings = () => {
         localStorage.setItem('Theme', theme)
