@@ -11,11 +11,12 @@ body {
   padding: 30px;
 }
 
-header.hero {
+.hero {
   background-image: url("ai_header_edit.png"); /* Replace with your desired image */
   background-size: cover;
   background-position: center;
   height: 600px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +53,7 @@ header .btn.secondary {
 }
 
 section {
-  max-width: 90%;
+  width: 100vw;
 }
 
 section h2 {
