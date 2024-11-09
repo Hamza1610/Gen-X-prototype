@@ -1,10 +1,10 @@
 import '../styles/App.css';
 // import backgroundImage from 'ai_header.jpeg'
 import { useState } from 'react';
-import './styles/get_started.css';
-import { Container, Button, Navbar, ButtonToolbar } from 'react-bootstrap'
-import Settings from './components/settings';
-import Workspace from './components/workspace';
+import '../styles/get_started.css';
+import { Container, Button, Navbar } from 'react-bootstrap'
+import Settings from '../components/settings';
+import Workspace from '../components/workspace';
 
 function GetStartedPage() {
   const [showTab, setShowTab] = useState({
@@ -57,10 +57,6 @@ function GetStartedPage() {
         </Container>
       </main>
     </Container>
-    <ButtonToolbar className='mobile-menu-tray' hidden>
-      <Button><i className='fas fa-server'></i></Button>
-      <Button><i className='fas fa-wrench'></i></Button>
-    </ButtonToolbar>
   </div>
   )}
 export default GetStartedPage;
