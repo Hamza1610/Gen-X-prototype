@@ -13,7 +13,7 @@ export default  function Workspace(props) {
                 <Button className='btn-menu'><i className='fab fa-searchengine'></i>Search</Button>
             </ButtonToolbar>
             <Container className='workspace-content-board'>
-                
+                     
             </Container>
         </div>
     )
