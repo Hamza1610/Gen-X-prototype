@@ -3,7 +3,7 @@ import '../styles/workspace.css';
 
 export default  function Workspace(props) {
     /* const {} = props */
-
+    
     return (
         <div className='workspace-component'>
             { /*  Workspace componant can be different type of work, media, research tools. Can be added as a component*/}
@@ -13,7 +13,11 @@ export default  function Workspace(props) {
                 <Button className='btn-menu'><i className='fab fa-searchengine'></i>Search</Button>
             </ButtonToolbar>
             <Container className='workspace-content-board'>
-                     
+                   <Container className='view-container'>
+                        {/* Teme */}
+                   </Container>
+                   <Container className='download-action-container' ></Container>
+                   <Container className='search-action-container' ></Container>
             </Container>
         </div>
     )
