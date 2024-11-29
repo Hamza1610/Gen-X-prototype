@@ -13,7 +13,7 @@
 
 .menu-tray {
     display: flex;
-    width: 30px;
+    width: 15%;
     height: 100%;
     flex-direction: column;
     align-items: start;
@@ -29,6 +29,23 @@
     }
 }
 .btn-menu {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: auto; 
+}
+
+
+@media (max-width: 425px) {
+    .menu-option-label {
+        /* this is visible on every screen except for mobile view */
+        visibility: hidden;
+    }    
+}
+.workspace-content-board {
+    width: 95%;
+    border-style: solid;
+    border-color: rgba(122, 243, 41, 0.1);
+    background-color: rgba(57, 58, 57, 0.914);
+    color: rgba(15, 210, 44, 0.914);
+    font-family: cursive;
+    font-size: 1.2rem;
 }
