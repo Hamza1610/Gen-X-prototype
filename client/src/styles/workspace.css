@@ -49,3 +49,8 @@
     font-family: cursive;
     font-size: 1.2rem;
 }
+
+.panel {
+    width: 100%;
+    height: 100vh;
+}
