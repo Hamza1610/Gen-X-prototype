@@ -5,7 +5,7 @@ export default  function Workspace(props) {
     /* const {} = props */
 
     const viewContent = () => {
-        const viewBoard = document.getElementById('view-container')
+
     }
     
 
@@ -18,15 +18,15 @@ export default  function Workspace(props) {
                 <Button className='btn-menu' id='search-btn'><i className='fab fa-searchengine'></i><span className='menu-option-label'>Search</span></Button>
             </ButtonToolbar>
             <Container className='workspace-content-board'>
-                   <Container className='view-container' hidden>
+                   <Container className='panel view-container hide-board'>
                         View
                    </Container>
                    
-                   <Container className='download-action-container' hidden>
+                   <Container className='panel download-action-container hide-board'>
                         Download
                    </Container>
 
-                   <Container className='search-action-container hidden' hidden>
+                   <Container className='panel search-action-container hide-board'>
                         Search
                    </Container>
             </Container>
