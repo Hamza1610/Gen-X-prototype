@@ -1,4 +1,4 @@
-.workspace-component {
+/* .workspace-component {
     width: 100%;
     padding: 10px;
     position: fixed;
@@ -36,12 +36,13 @@
 
 @media (max-width: 425px) {
     .menu-option-label {
-        /* this is visible on every screen except for mobile view */
+        this is visible on every screen except for mobile view
         visibility: hidden;
     }    
 }
 .workspace-content-board {
-    width: 95%;
+    width: 90%;
+    max-height: 90%;
     border-style: solid;
     border-color: rgba(122, 243, 41, 0.1);
     background-color: rgba(57, 58, 57, 0.914);
@@ -53,4 +54,61 @@
 .panel {
     width: 100%;
     height: 100vh;
+} */
+
+.workspace-component {
+    background-color: #0b0f19; /* Dark background */
+    color: #39ff14; /* Tech Green */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #39ff14;
+    height: 80vh;
+}
+
+.menu-tray {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.btn-menu {
+    background-color: #222831;
+    color: #39ff14;
+    border: 1px solid #39ff14;
+    box-shadow: 0 0 5px #39ff14;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-menu:hover {
+    background-color: #39ff14;
+    color: #000;
+    box-shadow: 0 0 15px #39ff14;
+}
+
+.workspace-content-board {
+    background-color: #1a1f2b;
+    padding: 15px;
+    border: 2px solid #39ff14;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #39ff14;
+    min-height: 200px;
+}
+
+.panel {
+    display: none;
+    padding: 15px;
+    background-color: #0b0f19;
+    border: 1px solid #39ff14;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #39ff14;
+    color: #39ff14;
+}
+
+.hide-board {
+    display: none;
+}
+
+.panel:not(.hide-board) {
+    display: block;
 }
