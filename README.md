@@ -100,57 +100,51 @@
 - Python 3.9+ installed for FastAPI backend.
 
 ### **Installation**
-
-#### **Frontend Setup**
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/Hamza1610/Gen-X-prototype.git
    ```
+#### **Frontend Setup**
 
-2. Navigate to the project directory:
+1. Navigate to the project directory:
    ```bash
-   cd Gen-X-prototypeUI
+   cd client
    ```
 
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-4. Start the development server:
+3. Start the development server:
    ```bash
    npm start
    ```
 
-5. Open your browser and navigate to:
+4. Open your browser and navigate to:
    ```
    http://localhost:3000
    ```
 
 #### **Backend Setup**
-1. Clone the backend repository (if separate):
+1. Navigate to the backend project directory:
    ```bash
-   git clone https://github.com/Hamza1610/Gen-X-prototype-backend.git
+   cd server
    ```
 
-2. Navigate to the backend project directory:
-   ```bash
-   cd Gen-X-prototype-backend
-   ```
-
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Start the FastAPI server:
+3. Start the FastAPI server:
    ```bash
-   uvicorn main:app --reload
+   py main.py
    ```
 
-5. Access the backend API documentation:
+4. Access the backend API documentation:
    ```
-   http://localhost:8000/docs
+   http://localhost:3002/docs
    ```
 
 ---
