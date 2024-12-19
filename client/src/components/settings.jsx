@@ -1,9 +1,12 @@
 import { Button, Form, FormControl, FormSelect } from 'react-bootstrap'
 import '../styles/settings.css';
 import { useState } from 'react';
+import { languages } from '../constants/language';
 
 export default function Settings() {
 
+    console.log('Lang:', languages);
+    
     const [theme, setTheme] = useState(localStorage.getItem('Theme') || 'dark');
     const [font, setFont] = useState(localStorage.getItem('Font') || '1em');
 
@@ -33,20 +36,21 @@ export default function Settings() {
             </div>
 
             <div className="permissions-settings">
-                <h3 className='setting-label'>Permissions</h3>
+                <h3 className='setting-label'>Preference</h3>
                 <div className="setting-groups">
                     <div className='setting'>
-                        <span>Voice</span>
-                        <FormControl type='checkbox' defaultValue={4} style={{width: '20%', marginLeft: '5px'}}/>                
+                        <span>Languages</span>
+                        <FormSelect type='checkbox'style={{width: '20%', marginLeft: '5px'}}>
+                            {languages && languages.map((language) => (
+                                <option>{language[0]}</option>
+                            ))}
+                        </FormSelect>
+
                     </div>
 
-                    <div className='setting'>
-                        <span>Speaker</span>
-                        <FormControl type='checkbox' defaultValue={4} style={{width: '20%', marginLeft: '5px'}}/>                
-                    </div>
                 </div>
-                <Button style={{width: 'auto'}} onClick={() => saveSettings()}>Save</Button>
             </div>
+            <button className="btn" onClick={() => saveSettings()}>Save</button>
         </div>
     )
 }
