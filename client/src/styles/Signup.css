@@ -1,0 +1,142 @@
+/* General Signup Container */
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Fullscreen height */
+  width: 100%;
+  background-color: #0b0f19; /* Dark tech background */
+}
+
+/* Signup Container */
+.signup-container {
+  background-color: #10141e; /* Slightly lighter than background for contrast */
+  color: #39ff14; /* Neon green text */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #39ff14; /* Neon glow around container */
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: #39ff14;
+  text-shadow: 0 0 10px #39ff14;
+}
+
+/* Form Styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #39ff14;
+  font-size: 1rem;
+  text-shadow: 0 0 5px #39ff14;
+  margin-bottom: 0.2rem;
+}
+
+input {
+  background-color: #0b0f19; /* Dark background for inputs */
+  border: 1px solid #39ff14; /* Neon green border */
+  border-radius: 5px;
+  padding: 0.8rem;
+  color: #39ff14; /* Text inside the input */
+  font-size: 1rem;
+  box-shadow: 0 0 5px #39ff14;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #72ff58; /* Brighter glow on focus */
+  border-color: #72ff58; /* Light neon green on focus */
+}
+
+/* Signup Button */
+.signup-button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #0b0f19; /* Text becomes dark for contrast */
+  background-color: #39ff14; /* Neon green button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #39ff14;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+  background-color: #72ff58; /* Lighter green on hover */
+  box-shadow: 0 0 15px #72ff58;
+}
+
+.signup-button:active {
+  transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Google Button */
+.google-button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #0b0f19; /* Text becomes dark for contrast */
+  background-color: #db4437; /* Red base for Google */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #db4437;
+  transition: all 0.3s ease-in-out;
+}
+
+.google-button:hover {
+  background-color: #e57363; /* Brighter red on hover */
+  box-shadow: 0 0 15px #e57363;
+}
+
+.google-button:active {
+  transform: scale(0.95);
+}
+
+/* Feedback Styles */
+.error {
+  color: #ff4d4d; /* Bright red for error */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #ff4d4d;
+}
+
+.success {
+  color: #39ff14; /* Green for success */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #39ff14;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.2rem;
+  }
+
+  .signup-button,
+  .google-button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+  }
+
+  input {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+  }
+}
