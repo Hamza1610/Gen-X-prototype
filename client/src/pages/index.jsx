@@ -13,7 +13,7 @@ function LangingPage() {
           <h1>Introducing Gen-X</h1>
           <p>The AI-powered voice shell executor, built for the future.</p>
           <a href="/get-started" class="btn">Get started</a>
-          <a href="#signup" class="btn secondary">Sign Up</a>
+          <a href="#signup" class="btn">Sign Up</a>
         </div>
       </header>
 
