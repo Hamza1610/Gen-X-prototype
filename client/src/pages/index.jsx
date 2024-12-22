@@ -1,5 +1,5 @@
 import Footer from '../components/footer';
-import SignUp from '../components/sign_up';
+import SignUp from '../components/Signup';
 import '../styles/App.css';
 import Feature from '../components/Feartures';
 import Benefits from '../components/Benefits';
@@ -23,8 +23,6 @@ function LangingPage() {
         <About />
         {/* SignUp */}
         <SignUp />
-        {/* Sign in */}
-        {/* <SignIn /> */}
       </section>
       {/* Footer */}
       <Footer />
