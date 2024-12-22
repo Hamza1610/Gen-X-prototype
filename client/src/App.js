@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
-import LangingPage from './pages';
-import GetStartedPage from './pages/get_started';
-import './styles/get_started.css';
+import LandingPage from './pages/index';
+import GetStartedPage from './pages/GetStarted';
+import NotFound from './pages/NotFound';
 
 function App() {
 
@@ -15,8 +15,9 @@ function App() {
     <BrowserRouter>
     <div className='App'>
       <Routes>
-        <Route path='/' Component={ LangingPage }  />
+        <Route path='/' Component={ LandingPage }  />
         <Route path='/get-started' Component={ GetStartedPage } />
+        <Route path='*' Component={ NotFound } />
       </Routes>
     </div> 
     </BrowserRouter> 
