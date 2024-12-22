@@ -10,9 +10,9 @@ export default function Workspace(props) {
     const checkInternetConnection = () =>  {
         if (!navigator.onLine) {
             speakMessage('You not connected to the internet!')
-            return
+            return false
         }
-        return
+        return true
     }
     // Function to speak messages
     const speakMessage = (message) => {
@@ -25,7 +25,9 @@ export default function Workspace(props) {
     };
 
     const viewContent = async () => {
-        checkInternetConnection()
+        if (!checkInternetConnection()) return;
+        
+        
         console.log("Fetching content to view...");
         try {
             // Example: Fetch content (replace with actual API)
@@ -48,7 +50,8 @@ export default function Workspace(props) {
     };
 
     const searchDocuments = async () => {
-        checkInternetConnection()
+        if (!checkInternetConnection()) return;
+
         speakMessage("What do you want to search for?");
         const query = prompt("What do you want to search for?");
         if (!query) return;
@@ -74,7 +77,8 @@ export default function Workspace(props) {
     };
 
     const downloadFile = () => {
-        checkInternetConnection()
+        if (!checkInternetConnection()) return;
+        
         speakMessage("Enter the file URL to download:");
         const fileUrl = prompt("Enter the file URL to download:");
         if (!fileUrl) return;
