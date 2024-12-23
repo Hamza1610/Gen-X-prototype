@@ -1,21 +1,15 @@
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import Dict, List, Tuple
-import uvicorn
-from stream_io import socket_app
+from app.api.routes import auth, ai, user
 
 app = FastAPI()
 
-origins = ['http://locahhost:3000']
-# Middleware
-app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials = True, allow_methods= ["*"], allow_headers=["*"])
-app.mount('/websocket', socket_app)
+# Include API routes
+app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
+app.include_router(ai.router, prefix="/ai", tags=["AI Features"])
+app.include_router(user.router, prefix="/users", tags=["User Management"])
 
 @app.get("/")
-async def root():
-    return {"message": "Hello, FastAPI!"}
+def read_root():
+    return {"message": "Welcome to Gen-X Prototype API!"}
 
 
-if __name__ == "__main__":
-    uvicorn.run("main:app", port= 3002, reload = True)
